@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #272727;
+  list-style: none;
+  margin: 0;
+}
+
+.logo {
+  height: 35px;
+  margin-left: 36px;
+  margin-top: 16px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  margin-top: 16px;
+}
+
+.custom-btn {
+  background-color: #6366f1;
+  color: white;
+  border-radius: 12px;
+  border: 0;
+  padding: 10px;
+  margin-right: 36px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 577px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 0;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
+  .text-container {
+    display: none;
+  }
+
+  .small-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    background-color: #e6f6ff;
+  }
+
+  .small-btn-container {
+    display: flex;
+    align-items: center;
+    margin-left: 27%;
+  }
+
+  .small-btn {
+    background-color: transparent;
+  }
+
+  .custom-btn {
+    margin-right: 0;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .small-logo {
+    height: 20px;
+    color: white;
+  }
+
+  .logout-logo {
+    height: 20px;
+    color: white;
+  }
+}
+
+.small-logo {
+  height: 35px;
+  padding: 12px;
+}
+
+.logout-logo {
+  height: 45px;
+}
+
+@media (min-width: 577px) {
+  .small-btn {
+    display: none;
+  }
+
+  .small-container {
+    display: none;
+  }
+}
+
+.extra {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: auto;
+}
+
+.text-para {
+  margin-right: 16px;
+  color: #f1f5f9;
+  font-family: 'Roboto';
+}
